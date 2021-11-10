@@ -17,7 +17,7 @@ namespace Lesson.PerformanceTasks
 
             for (var i = number; i > 0; i--)
             {
-                if (IsDivider(i, 2, ref operationsCount) && IsDivider(i, 5, ref operationsCount))
+                if (IsDivisible(i, 2, ref operationsCount) && IsDivisible(i, 5, ref operationsCount))
                 {
                     divisibleCount++;
                 }
@@ -26,7 +26,7 @@ namespace Lesson.PerformanceTasks
             return (divisibleCount, operationsCount);
         }
 
-        private static bool IsDivider(int number, int divider, ref int counter)
+        private static bool IsDivisible(int number, int divider, ref int counter)
         {
             ++counter;
             return number % divider == 0;
