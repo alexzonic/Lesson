@@ -7,6 +7,8 @@ namespace Lesson.PerformanceTasks
         /*
          * считает количество чисел от 1 до number, делящихся на 5 и 2 без остатка
          * возвращает количетсво чисел и число делений числа
+         *
+         * + к карме, если сможете избавиться от ref 
          */
         public static (int, int) CalculateEvenNumbers(int number)
         {
