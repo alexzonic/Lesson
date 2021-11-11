@@ -9,12 +9,15 @@ namespace Lesson.RefactoringTasks
 
         public static int GetNumber(Guid guid)
         {
-            var stringValue = GetStringByGuid(guid);
+            int number;
+            string stringValue;
+            
+            stringValue = GetStringByGuid(guid);
 
             if (stringValue == NotFound)
                 return -1;
 
-            var number = int.Parse(stringValue);
+            number = int.Parse(stringValue);
             return number;
         }
 

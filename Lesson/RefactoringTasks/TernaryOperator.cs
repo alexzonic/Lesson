@@ -21,7 +21,7 @@ namespace Lesson.RefactoringTasks
             else
                 count += 0;
 
-            var list = new List<int> {count}; // пустышка, чтобы райдер не жаловался что count бесполезный
+            var list = new List<int> {count}; // пустышка, чтобы райдер не жаловался что count бесполезный // теперь жалуется, что list бесполезный
 
             /*
              * ...
@@ -30,10 +30,18 @@ namespace Lesson.RefactoringTasks
 
         public static string ReturnNullOrEmpty(bool condition)
         {
+            string result;
+
             if (condition)
-                return null;
+            {
+                result = null;   
+                return result;
+            }
             else
-                return string.Empty;
+            {
+                result = string.Empty;
+                return result;
+            }
         }
 
         public static int Add2Or1AndReturn(int value, bool condition)
