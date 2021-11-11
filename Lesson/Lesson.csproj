@@ -43,6 +43,7 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="PerformanceTasks\Circles.cs" />
         <Compile Include="PerformanceTasks\Selectivity.cs" />
         <Compile Include="PerformanceTasks\StringExtensions.cs" />
         <Compile Include="Program.cs" />
